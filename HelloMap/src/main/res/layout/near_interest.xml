@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:padding="8dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#f0ffff"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/iv_title_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/cross_title_pre_pressed"/>
+        <AutoCompleteTextView
+            android:id="@+id/actv_near_search"
+            android:layout_marginLeft="10dp"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:textSize="20sp"
+            android:background="@null"
+            android:hint="搜索附近景点、餐馆、影院"
+             />
+        <Button
+            android:id="@+id/btn_near_search"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="@mipmap/subway_search_button"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:numColumns="4"
+        android:columnWidth="50dp"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="3dp"
+        android:layout_marginTop="20dp"
+        android:stretchMode="columnWidth"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        >
+    </GridView>
+
+</LinearLayout>
